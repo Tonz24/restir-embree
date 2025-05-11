@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>$(SolutionDir)..\libs\Boost;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
     <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(VC_IncludePath);$(WindowsSDK_IncludePath);;C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
   </PropertyGroup>
@@ -80,11 +80,11 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;../../libs/embree/include;../../libs/imgui/include;../../libs/freeimage/include;$(IncludePath);C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
     <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;../../libs/embree/lib;../../libs/freeimage/lib;$(LibraryPath)</LibraryPath>
-    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>$(SolutionDir)..\libs\Boost;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>$(SolutionDir)..\libs\Boost;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
     <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(VC_IncludePath);$(WindowsSDK_IncludePath);;C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
   </PropertyGroup>
@@ -93,7 +93,7 @@
     <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;../../libs/embree/include;../../libs/imgui/include;../../libs/freeimage/include;$(IncludePath);C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
     <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;../../libs/embree/lib;../../libs/freeimage/lib;$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
-    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+    <ExternalIncludePath>$(SolutionDir)..\libs\Boost;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
