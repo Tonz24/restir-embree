@@ -9,7 +9,7 @@
 #include "glm/glm.hpp"
 #include "glm/gtx/string_cast.hpp"
 
-Camera::Camera( const int width, const int height, const float fov_y, const glm::vec3 view_from, const glm::vec3 view_at, const TextureDepr& tex) :
+Camera::Camera( const int width, const int height, const float fov_y, const glm::vec3 view_from, const glm::vec3 view_at, const Texture& tex) :
 	width_(width), height_(height), fov_y_(fov_y), view_from_(view_from), viewAt(view_at), viewDir(glm::normalize(view_at - view_from)) {
 
 	setFOV(fov_y);
@@ -135,7 +135,7 @@ void Camera::drawGui() {
 	}
 }
 
-void Camera::extractShape(const TextureDepr& tex){
+void Camera::extractShape(const Texture& tex){
 	for (int x = 0; x < tex.width(); ++x){
 		float u = static_cast<float>(x) / static_cast<float>(tex.width()) * 2.0f - 1.0f;
 

@@ -15,17 +15,17 @@
 
 
 
-TextureDepr* ModelLoader::TextureProxy(const std::string& full_name,
-	std::map<std::string, TextureDepr*>& already_loaded_textures, const int flip, const bool single_channel) {
-	std::map<std::string, TextureDepr*>::iterator already_loaded_texture = already_loaded_textures.find(full_name);
-	TextureDepr* texture = nullptr;
+Texture* ModelLoader::TextureProxy(const std::string& full_name,
+	std::map<std::string, Texture*>& already_loaded_textures, const int flip, const bool single_channel) {
+	std::map<std::string, Texture*>::iterator already_loaded_texture = already_loaded_textures.find(full_name);
+	Texture* texture = nullptr;
 	if (already_loaded_texture != already_loaded_textures.end())
 	{
 		texture = already_loaded_texture->second;
 	}
 	else
 	{
-		texture = new TextureDepr(full_name.c_str(),BILINEAR,REPEAT);// , flip, single_channel);
+		texture = new Texture(full_name.c_str(),BILINEAR,REPEAT);// , flip, single_channel);
 		if (!texture->isValid()){
 			delete texture;
 			return nullptr;
@@ -40,7 +40,7 @@ TextureDepr* ModelLoader::TextureProxy(const std::string& full_name,
 //load all materials
 void ModelLoader::loadMaterials(const std::string& directory, const aiScene& scene, std::vector<Material*>& materials) {
 
-	std::map<std::string, TextureDepr*> already_loaded_textures;
+	std::map<std::string, Texture*> already_loaded_textures;
 
 	//skip the first index since it's just a default material
 	for (int i = 1; i < scene.mNumMaterials; ++i) {

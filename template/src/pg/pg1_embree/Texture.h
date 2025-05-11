@@ -1,36 +1,56 @@
-#pragma once
+#ifndef TEXTURE_H_
+#define TEXTURE_H_
 #include "glm/glm.hpp"
 
-template<typename T>
-class Texture {
-public:
+/*! \class Texture
+\brief Single texture.
 
-	explicit Texture(const std::string& fileName);
-
-
-	const T& getTexel(const glm::vec<2, uint32_t>& coordsAbs){
-		return getTexelInternal(coordsAbs);
-	}
-	const T& getTexel(const glm::vec<2, float>& coordsUV);
-
-	uint32_t getWidth() const {
-		return width;
-	}
-	uint32_t getHeight() const {
-		return height;
-	}
+\author Tomáš Fabián
+\version 0.95
+\date 2012-2018
+*/
 
 
-private:
-	uint32_t width{0};
-	uint32_t height{0};
-
-	std::vector<T> data{};
-
-	const T& getTexelInternal(const glm::vec<2, uint32_t>& coordsAbs){
-		assert(coordsAbs.x >= 0 && coordsAbs.x < width);
-		assert(coordsAbs.y >= 0 && coordsAbs.y < height);
-
-		return data.at(coordsAbs.y * width + coordsAbs.x);
-	}
+enum TextureInterp{
+	NEAREST,
+	BILINEAR
 };
+
+enum TextureClamp{
+	CLAMP_TO_EDGE,
+	REPEAT
+};
+
+class Texture
+{
+public:
+	explicit Texture( const char * file_name, TextureInterp interpType = BILINEAR, TextureClamp clampType = CLAMP_TO_EDGE);
+	~Texture();
+
+	glm::vec3 get_texel( const int x, const int y ) const;
+	glm::vec3 get_texel(const glm::vec2& uv) const;
+
+	int width() const;
+	int height() const;
+
+	void compress();
+	void expand();
+
+	bool isValid(){
+		return data_ && width_ > 0 && height_ > 0;
+	}
+
+private:		
+	int width_{ 0 }; // image width (px)
+	int height_{ 0 }; // image height (px)
+	int scan_width_{ 0 }; // size of image row (bytes)
+	int pixel_size_{ 0 }; // size of each pixel (bytes)
+	BYTE * data_{ nullptr }; // image data in BGR format
+	TextureInterp interpType;
+	TextureClamp clampType;
+
+	glm::vec3 getTexelNearestNeighbor(const glm::vec2& uv) const;
+	glm::vec3 getTexelBilinear(const glm::vec2& uv) const;
+
+};
+#endif

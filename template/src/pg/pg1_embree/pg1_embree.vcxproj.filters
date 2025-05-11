@@ -99,7 +99,7 @@
     <ClInclude Include="raytracer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TextureDepr.h">
+    <ClInclude Include="Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="utils.h">
@@ -176,9 +176,6 @@
     </ClInclude>
     <ClInclude Include="Reservoir.h">
       <Filter>Header Files\Structs</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Integrator.h">
       <Filter>Header Files\Integrators</Filter>
@@ -269,7 +266,7 @@
     <ClCompile Include="raytracer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TextureDepr.cpp">
+    <ClCompile Include="Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="utils.cpp">
@@ -346,9 +343,6 @@
     </ClCompile>
     <ClCompile Include="Reservoir.cpp">
       <Filter>Source Files\Structs</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Integrator.cpp">
       <Filter>Source Files\Integrators</Filter>

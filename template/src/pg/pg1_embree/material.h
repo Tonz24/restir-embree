@@ -4,7 +4,7 @@
 #include "HitInfo.h"
 #include "PTInfo.h"
 #include "Ray.h"
-#include "TextureDepr.h"
+#include "Texture.h"
 
 
 /*! \def NO_TEXTURES
@@ -54,7 +54,7 @@ public:
 	Material( std::string & name, const glm::vec3 & ambient, const glm::vec3 & diffuse,
 		const glm::vec3 & specular, const glm::vec3 & emission, const float reflectivity,
 		const float shininess, const float ior,
-		TextureDepr ** textures = NULL, const int no_textures = 0 );
+		Texture ** textures = NULL, const int no_textures = 0 );
 
 	//! Destruktor.
 	/*!
@@ -81,14 +81,14 @@ public:
 	\param slot èíslo slotu, do kterého bude textura pøiøazena. Maximálnì \a NO_TEXTURES - 1.
 	\param texture ukazatel na texturu.
 	*/
-	void set_texture( const int slot, TextureDepr * texture );
+	void set_texture( const int slot, Texture * texture );
 
 	//! Vrátí texturu.
 	/*!	
 	\param slot èíslo slotu textury. Maximálnì \a NO_TEXTURES - 1.
 	\return Ukazatel na zvolenou texturu.
 	*/
-	TextureDepr * get_texture( const int slot ) const;
+	Texture * get_texture( const int slot ) const;
 
 	virtual PTInfoGI evaluateLightingGI(const HitInfo& hitInfo, const Ray& ray) const;
 
@@ -137,7 +137,7 @@ public:
 	}
 
 protected:
-	TextureDepr * textures_[NO_TEXTURES]; /*!< Pole ukazatelù na textury. */
+	Texture * textures_[NO_TEXTURES]; /*!< Pole ukazatelù na textury. */
 	/*
 	slot 0 - diffuse map + alpha
 	slot 1 - specular map + opaque alpha

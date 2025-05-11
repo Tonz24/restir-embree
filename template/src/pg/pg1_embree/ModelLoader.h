@@ -17,6 +17,6 @@ public:
 
 private:
 	static void loadMaterials(const std::string& directory, const aiScene& scene, std::vector<Material*>& materials);
-	static TextureDepr* TextureProxy(const std::string& full_name, std::map<std::string, TextureDepr*>& already_loaded_textures,
+	static Texture* TextureProxy(const std::string& full_name, std::map<std::string, Texture*>& already_loaded_textures,
 		const int flip = -1, const bool single_channel = false);
 };
