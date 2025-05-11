@@ -114,6 +114,7 @@
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+xcopy /Y /D "$(SolutionDir)..\libs\ASSIMP\build\lib\Release\assimp-vc143-mt.dll" "$(OutDir)"
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -138,6 +139,7 @@
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+xcopy /Y /D "$(SolutionDir)..\libs\ASSIMP\build\lib\Release\assimp-vc143-mt.dll" "$(OutDir)"
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -164,6 +166,7 @@
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+xcopy /Y /D "$(SolutionDir)..\libs\ASSIMP\build\lib\Release\assimp-vc143-mt.dll" "$(OutDir)"
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -192,6 +195,7 @@
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+xcopy /Y /D "$(SolutionDir)..\libs\ASSIMP\build\lib\Release\assimp-vc143-mt.dll" "$(OutDir)"
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
