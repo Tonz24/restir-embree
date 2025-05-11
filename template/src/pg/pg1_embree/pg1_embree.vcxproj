@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2400E41F-D76F-4733-A9D6-F91E1D079F63}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>pg1embree</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(VC_IncludePath);$(WindowsSDK_IncludePath);;C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;../../libs/embree/include;../../libs/imgui/include;../../libs/freeimage/include;$(IncludePath);C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
+    <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;../../libs/embree/lib;../../libs/freeimage/lib;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(VC_IncludePath);$(WindowsSDK_IncludePath);;C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;../../libs/embree/include;../../libs/imgui/include;../../libs/freeimage/include;$(IncludePath);C:\Users\Tonz\source\repos\PG1copy\template\src\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise</IncludePath>
+    <LibraryPath>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;../../libs/embree/lib;../../libs/freeimage/lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <ExternalIncludePath>C:\Program Files\Boost\boost_1_86_0;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(SolutionDir)..\libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc143-mt.lib;OpenImageDenoise.lib
+;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(SolutionDir)..\libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc143-mt.lib;OpenImageDenoise.lib
+;embree3.lib;D3d11.lib;d3dcompiler.lib;FreeImaged.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(SolutionDir)..\libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc143-mt.lib;OpenImageDenoise.lib
+;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\include\OpenImageDenoise;$(SolutionDir)..\libs\ASSIMP\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc143-mt.lib;OpenImageDenoise.lib
+;embree3.lib;D3d11.lib;d3dcompiler.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\lib;$(SolutionDir)..\libs\ASSIMP\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(SolutionDir)..\libs\oidn-2.3.3.x64.windows\bin" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Downloads\stb_image.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Downloads\stb_image_write.h" />
+    <ClInclude Include="..\..\libs\imgui\imconfig.h" />
+    <ClInclude Include="..\..\libs\imgui\imgui.h" />
+    <ClInclude Include="..\..\libs\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\libs\imgui\include\imgui_impl_dx11.h" />
+    <ClInclude Include="..\..\libs\imgui\include\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\libs\imgui\stb_rect_pack.h" />
+    <ClInclude Include="..\..\libs\imgui\stb_textedit.h" />
+    <ClInclude Include="..\..\libs\imgui\stb_truetype.h" />
+    <ClInclude Include="DirectAreaIntegrator.h" />
+    <ClInclude Include="DirectBRDFIntegrator.h" />
+    <ClInclude Include="DirectReservoirIntegrator.h" />
+    <ClInclude Include="Distribution.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="DirectMISIntegrator.h" />
+    <ClInclude Include="GBufferElement.h" />
+    <ClInclude Include="HitInfo.h" />
+    <ClInclude Include="DirectIntegrator.h" />
+    <ClInclude Include="IDrawGui.h" />
+    <ClInclude Include="Integrator.h" />
+    <ClInclude Include="Intersection.h" />
+    <ClInclude Include="IntersectionResult.h" />
+    <ClInclude Include="material.h" />
+    <ClInclude Include="MaterialDielectric.h" />
+    <ClInclude Include="MaterialLambert.h" />
+    <ClInclude Include="MaterialMirror.h" />
+    <ClInclude Include="MaterialNormal.h" />
+    <ClInclude Include="MaterialParams.h" />
+    <ClInclude Include="MaterialPhong.h" />
+    <ClInclude Include="MaterialTS.h" />
+    <ClInclude Include="MaterialTransparent.h" />
+    <ClInclude Include="ModelLoader.h" />
+    <ClInclude Include="NaivePathIntegrator.h" />
+    <ClInclude Include="NEEPathIntegrator.h" />
+    <ClInclude Include="PTInfo.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="raytracer.h" />
+    <ClInclude Include="RenderParams.h" />
+    <ClInclude Include="Reservoir.h" />
+    <ClInclude Include="PixelSampler.h" />
+    <ClInclude Include="ReSTIRIntegrator.h" />
+    <ClInclude Include="Sampling.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="simpleguidx11.h" />
+    <ClInclude Include="Sky.h" />
+    <ClInclude Include="Skybox.h" />
+    <ClInclude Include="SphericalMap.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="enums.h" />
+    <ClInclude Include="surface.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureDepr.h" />
+    <ClInclude Include="triangle.h" />
+    <ClInclude Include="TriangleCDF.h" />
+    <ClInclude Include="tutorials.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\libs\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\libs\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\libs\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\..\libs\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="DirectAreaIntegrator.cpp" />
+    <ClCompile Include="DirectBRDFIntegrator.cpp" />
+    <ClCompile Include="DirectReservoirIntegrator.cpp" />
+    <ClCompile Include="Distribution.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="DirectMISIntegrator.cpp" />
+    <ClCompile Include="HitInfo.cpp" />
+    <ClCompile Include="Integrator.cpp" />
+    <ClCompile Include="IntersectionResult.cpp" />
+    <ClCompile Include="material.cpp" />
+    <ClCompile Include="MaterialDielectric.cpp" />
+    <ClCompile Include="MaterialLambert.cpp" />
+    <ClCompile Include="MaterialMirror.cpp" />
+    <ClCompile Include="MaterialNormal.cpp" />
+    <ClCompile Include="MaterialParams.cpp" />
+    <ClCompile Include="MaterialPhong.cpp" />
+    <ClCompile Include="MaterialTS.cpp" />
+    <ClCompile Include="MaterialTransparent.cpp" />
+    <ClCompile Include="ModelLoader.cpp" />
+    <ClCompile Include="NaivePathIntegrator.cpp" />
+    <ClCompile Include="NEEPathIntegrator.cpp" />
+    <ClCompile Include="PTInfo.cpp" />
+    <ClCompile Include="Ray.cpp" />
+    <ClCompile Include="raytracer.cpp" />
+    <ClCompile Include="pg1_embree.cpp" />
+    <ClCompile Include="RenderParams.cpp" />
+    <ClCompile Include="Reservoir.cpp" />
+    <ClCompile Include="PixelSampler.cpp" />
+    <ClCompile Include="ReSTIRIntegrator.cpp" />
+    <ClCompile Include="Sampling.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="simpleguidx11.cpp" />
+    <ClCompile Include="Sky.cpp" />
+    <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="SphericalMap.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="structs.cpp" />
+    <ClCompile Include="surface.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureDepr.cpp" />
+    <ClCompile Include="triangle.cpp" />
+    <ClCompile Include="TriangleCDF.cpp" />
+    <ClCompile Include="tutorials.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="vertex.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

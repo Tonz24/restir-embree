@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/warfe.png
+
+Iteration count: 4
+Area samples: 1
+BRDF samples: 1
+
+Spatial reuse: False
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 30
+
+Temporal reuse: False
+
+Render time: 1.9848 s
+Image mean: 0.18429
+Image variance: 11.094
+
+Camera position: vec3(-2.416690, 1.429669, 1.635284)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 80

@@ -1,0 +1,20 @@
+#pragma once
+
+enum MaterialType : uint8_t {
+	NORMAL = 0,
+	LAMBERT = 1,
+	PHONG = 2,
+	MIRROR = 3,
+	DIELECTRIC = 4,
+	DIELECTRIC_TRANSPARENT = 5,
+	UNSUPPORTED = 6
+};
+
+enum VertexType {
+	INVALID_VERTEX = -1,
+	CAMERA_VERTEX = 0,
+	DIFFUSE_VERTEX = 1,
+	SPECULAR_VERTEX = 2,
+	MIRROR_VERTEX = 3,
+	REFRACTIVE_VERTEX = 4
+};

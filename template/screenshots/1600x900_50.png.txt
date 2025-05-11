@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/1600x900_50.png
+
+Iteration count: 50
+Area samples: 32
+BRDF samples: 1
+
+Spatial reuse: True
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 30
+
+Temporal reuse: True
+
+Render time: 864.114 s
+Image mean: 0.147834
+Image variance: 6.66987
+
+Camera position: vec3(-2.639644, 1.953010, 1.809930)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 66

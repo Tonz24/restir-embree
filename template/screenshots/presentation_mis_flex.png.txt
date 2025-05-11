@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/presentation_mis_flex.png
+
+Iteration count: 30
+Area samples: 1
+BRDF samples: 1
+
+Spatial reuse: False
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 30
+
+Temporal reuse: False
+
+Render time: 129.992 s
+Image mean: 1.42315
+Image variance: 52.4993
+
+Camera position: vec3(1.459227, -7.665767, 2.205056)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 55

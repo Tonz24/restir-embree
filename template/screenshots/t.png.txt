@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/t.png
+
+Iteration count: 0
+Area samples: 1
+BRDF samples: 1
+
+Spatial reuse: False
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 30
+
+Temporal reuse: False
+
+Render time: 5.38849 s
+Image mean: 0.183737
+Image variance: 11.1678
+
+Camera position: vec3(-2.416690, 1.429669, 1.635284)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 80

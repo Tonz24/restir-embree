@@ -1,0 +1,114 @@
+# Blender 4.0.2 MTL File: 'Dining_Set_Scandinavian_Style.blend'
+# www.blender.org
+
+newmtl AAC_CHAIR_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/AAC_CHAIR_Mat_Base_color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/AAC_CHAIR_Mat_Roughness.jpg
+
+newmtl FLOOR
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/AQ_WoodenFloor_BaseColor.jpeg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/AQ_WoodenFloor_ROUGHNESS_2k.jpeg
+map_Bump -bm 1.000000 C:/Users/Tonz/Downloads/textures/AQ_WoodenFloor_NORMAL_2k.jpeg
+
+newmtl FRAME_01_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/FRAME_01_Mat_Base_color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/FRAME_01_Mat_Roughness.jpg
+map_Bump -bm 1.000000 C:/Users/Tonz/Downloads/textures/FRAME_01_Mat_Normal_OpenGL.jpg
+
+newmtl FRAME_02_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/FRAME_02_Mat_Base_color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/FRAME_02_Mat_Roughness.jpg
+
+newmtl LAMP_PINK_mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+Ns 1500
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/LAMP_PINK_mat_Base_Color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/LAMP_PINK_mat_Roughness.jpg
+map_refl C:/Users/Tonz/source/repos/PG1copy/template/data/room/LAMP_PINK_mat_Metallic.jpg
+map_Bump -bm 1.000000 C:/Users/Tonz/Downloads/textures/LAMP_PINK_mat_Normal_OpenGL.jpg
+
+newmtl LIGHT_PENDANT_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 50.000000 50.000000 50.000000
+Ni 1.450000
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/LIGHT_PENDANT_Mat_Base_color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/LIGHT_PENDANT_Mat_Roughness.jpg
+map_refl C:/Users/Tonz/source/repos/PG1copy/template/data/room/LIGHT_PENDANT_Mat_Metallic.jpg
+map_Bump -bm 1.000000 C:/Users/Tonz/source/repos/PG1copy/template/data/room/LIGHT_PENDANT_Mat_Normal_OpenGL.jpg
+
+newmtl PLATES_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+Ns 5000
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/PLATES_Mat_Base_Color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/PLATES_Mat_Roughness.jpg
+map_Bump -bm 1.000000 C:/Users/Tonz/source/repos/PG1copy/template/data/room/PLATES_Mat_Normal_OpenGL.jpg
+
+newmtl SIDEBOARD_Mat
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/SIDEBOARD_Mat_Base_color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/SIDEBOARD_Mat_Roughness.jpg
+map_Bump -bm 1.000000 C:/Users/Tonz/source/repos/PG1copy/template/data/room/SIDEBOARD_Mat_Normal_OpenGL.jpg
+
+newmtl VASE_CYL_CERAMIC
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+Ns 5000
+Pc 2
+map_Kd C:/Users/Tonz/source/repos/PG1copy/template/data/room/TABLE_WOOD_Base_color.jpg
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/TABLE_WOOD_Roughness.jpg
+
+newmtl WALL_Mat
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+Pc 2
+map_Ns C:/Users/Tonz/source/repos/PG1copy/template/data/room/AQ_CONCRETE_Roughness_.jpeg
+map_Bump -bm 1.000000 C:/Users/Tonz/source/repos/PG1copy/template/data/room/AQ_CONCRETE_NORMAL_.jpeg

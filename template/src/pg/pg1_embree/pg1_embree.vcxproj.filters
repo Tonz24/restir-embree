@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\imgui">
+      <UniqueIdentifier>{266e2731-59a8-48d1-ba36-d0fd226abbba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\imgui">
+      <UniqueIdentifier>{7001b05c-91b8-4597-b1ea-66834aa4b0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Materials">
+      <UniqueIdentifier>{d6bc0f96-17d8-4919-b73e-2154590591a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Materials">
+      <UniqueIdentifier>{5301d198-128b-4e9d-a3c6-df2e0d1c7c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sky">
+      <UniqueIdentifier>{d19eecae-ba42-43e3-9bf4-dc5c7d57df13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sky">
+      <UniqueIdentifier>{2fd7fc53-f705-4b94-9444-a972a8a57927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sampling">
+      <UniqueIdentifier>{f7642162-6a18-4e1a-8f93-3ddf13654e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sampling">
+      <UniqueIdentifier>{5bfa8239-9fb5-4ca7-8192-21b6fd0d9985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Structs">
+      <UniqueIdentifier>{ba17cec0-afb4-4868-a3d5-a6abd48ccd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Structs">
+      <UniqueIdentifier>{30dc8ab0-d9b9-4dc3-8874-138560c5780a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Integrators">
+      <UniqueIdentifier>{689e2fc7-3730-4734-b813-21094f31ed16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Integrators">
+      <UniqueIdentifier>{64c77a22-5fea-4af2-8d89-cb0af6c7a3bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\General">
+      <UniqueIdentifier>{3c7290b6-531c-4d9d-9881-1d2456b29f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\General">
+      <UniqueIdentifier>{4a371cd3-d73e-4e6a-9997-1bc238f0078f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BRDF">
+      <UniqueIdentifier>{6ca54514-b932-4b36-ab93-357148e18b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BRDF">
+      <UniqueIdentifier>{c9d87af8-1db9-43ee-b118-2fff7405ae96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\imconfig.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\imgui.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\imgui_internal.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\stb_rect_pack.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\stb_textedit.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\stb_truetype.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\include\imgui_impl_win32.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\imgui\include\imgui_impl_dx11.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="simpleguidx11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="raytracer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureDepr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="surface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tutorials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialDielectric.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialLambert.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialMirror.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialPhong.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialTransparent.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>Header Files\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Header Files\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="SphericalMap.h">
+      <Filter>Header Files\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampling.h">
+      <Filter>Header Files\Sampling</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleCDF.h">
+      <Filter>Header Files\Sampling</Filter>
+    </ClInclude>
+    <ClInclude Include="material.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialNormal.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="HitInfo.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionResult.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="PTInfo.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Reservoir.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Integrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderParams.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="NaivePathIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelSampler.h">
+      <Filter>Header Files\Sampling</Filter>
+    </ClInclude>
+    <ClInclude Include="NEEPathIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawGui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Distribution.h">
+      <Filter>Header Files\BRDF</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialTS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectMISIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Downloads\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Downloads\stb_image_write.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectAreaIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectBRDFIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectReservoirIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+    <ClInclude Include="GBufferElement.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Intersection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReSTIRIntegrator.h">
+      <Filter>Header Files\Integrators</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pg1_embree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\imgui\imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\imgui\imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\imgui\imgui_impl_dx11.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\imgui\imgui_demo.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="simpleguidx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="raytracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureDepr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="surface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tutorials.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialDielectric.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialLambert.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialMirror.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialPhong.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialTransparent.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Source Files\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Source Files\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="SphericalMap.cpp">
+      <Filter>Source Files\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampling.cpp">
+      <Filter>Source Files\Sampling</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleCDF.cpp">
+      <Filter>Source Files\Sampling</Filter>
+    </ClCompile>
+    <ClCompile Include="material.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialNormal.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="HitInfo.cpp">
+      <Filter>Source Files\Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionResult.cpp">
+      <Filter>Source Files\Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="structs.cpp">
+      <Filter>Source Files\Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="PTInfo.cpp">
+      <Filter>Source Files\Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reservoir.cpp">
+      <Filter>Source Files\Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Integrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderParams.cpp">
+      <Filter>Source Files\Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="NaivePathIntegrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelSampler.cpp">
+      <Filter>Source Files\Sampling</Filter>
+    </ClCompile>
+    <ClCompile Include="NEEPathIntegrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+    <ClCompile Include="Distribution.cpp">
+      <Filter>Source Files\BRDF</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialParams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialTS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectMISIntegrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectAreaIntegrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectBRDFIntegrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectReservoirIntegrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+    <ClCompile Include="ReSTIRIntegrator.cpp">
+      <Filter>Source Files\Integrators</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/fhd.png
+
+Iteration count: 0
+Area samples: 32
+BRDF samples: 1
+
+Spatial reuse: True
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 30
+
+Temporal reuse: True
+
+Render time: 14.9592 s
+Image mean: 0.279563
+Image variance: 15.359
+
+Camera position: vec3(-0.525378, -2.340772, 1.343063)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 99

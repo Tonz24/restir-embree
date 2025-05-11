@@ -1,0 +1,11 @@
+# Blender 4.0.2 MTL File: 'None'
+# www.blender.org
+
+
+newmtl wire_214229166 5
+	Ns 20
+	Tf 0.4 0.001 0.4
+	Ni 1.5
+	Ka 0.01 0.01 0.01
+	Kd 0.1 0.1 0.1
+	Ks 0.8 0.8 0.8

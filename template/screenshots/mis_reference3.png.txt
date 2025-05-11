@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/mis_reference3.png
+
+Iteration count: 2954
+Area samples: 1
+BRDF samples: 1
+
+Spatial reuse: False
+	Pass count: 5
+	Neighbor count: 5
+	Reuse radius: 10
+
+Temporal reuse: False
+
+Render time: 320.281 s
+Image mean: 0.69806
+Image variance: 27.6799
+
+Camera position: vec3(-1.622045, 0.435309, 2.176816)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 99

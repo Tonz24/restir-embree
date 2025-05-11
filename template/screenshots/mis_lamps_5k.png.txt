@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/mis_lamps_5k.png
+
+Iteration count: 5000
+Area samples: 32
+BRDF samples: 1
+
+Spatial reuse: False
+	Pass count: 5
+	Neighbor count: 5
+	Reuse radius: 30
+
+Temporal reuse: False
+
+Render time: 272.145 s
+Image mean: 1.57308
+Image variance: 4.76156
+
+Camera position: vec3(-4.764616, 149.255203, 87.752609)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 10

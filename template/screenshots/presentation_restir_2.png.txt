@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/presentation_restir_2.png
+
+Iteration count: 0
+Area samples: 1
+BRDF samples: 1
+
+Spatial reuse: True
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 60
+
+Temporal reuse: True
+
+Render time: 5.05777 s
+Image mean: 1.21278
+Image variance: 52.95
+
+Camera position: vec3(1.545580, -7.647925, 2.208178)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 55
