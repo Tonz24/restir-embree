@@ -15,8 +15,7 @@ bool Raytracer::gammaCorrect{true};
 Raytracer::Raytracer( int width, int height, float fov_y, const glm::vec3& view_from, const glm::vec3& view_at,
 	const char * config ) : SimpleGuiDX11( width, height ) {
 
-	Texture sky{ "../../../data/adidas.png" };
-	camera_ = Camera{ width, height, fov_y, view_from, view_at, sky };
+	camera_ = Camera{ width, height, fov_y, view_from, view_at};
 	newCamPos = camera_.getPosition();
 }
 
@@ -34,7 +33,7 @@ int Raytracer::ReleaseDevice(){
 
 void Raytracer::LoadScene( const std::string file_name ){
 	scene = Scene{ file_name.c_str(), device_ };
-	const auto path = std::string("../../../data/").append("pool.exr");
+	const auto path = std::string("../../../data/env/").append("pool.exr");
 	scene.loadSkybox(path);
 }
 
