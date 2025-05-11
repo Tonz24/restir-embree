@@ -9,13 +9,12 @@
 #include "glm/glm.hpp"
 #include "glm/gtx/string_cast.hpp"
 
-Camera::Camera( const int width, const int height, const float fov_y, const glm::vec3 view_from, const glm::vec3 view_at, const Texture& tex) :
+Camera::Camera( const int width, const int height, const float fov_y, const glm::vec3 view_from, const glm::vec3 view_at) :
 	width_(width), height_(height), fov_y_(fov_y), view_from_(view_from), viewAt(view_at), viewDir(glm::normalize(view_at - view_from)) {
 
 	setFOV(fov_y);
 	recalculate_m_c_w();
 
-	extractShape(tex);
 }
 
 Ray Camera::GenerateRay(const glm::vec2& org) const {
@@ -132,19 +131,5 @@ void Camera::drawGui() {
 		ImGui::Spacing();
 
 		ImGui::Separator();
-	}
-}
-
-void Camera::extractShape(const Texture& tex){
-	for (int x = 0; x < tex.width(); ++x){
-		float u = static_cast<float>(x) / static_cast<float>(tex.width()) * 2.0f - 1.0f;
-
-		for (int y = 0; y < tex.height(); ++y) {
-			float v = 1.0f - static_cast<float>(y) / static_cast<float>(tex.height()) * 2.0f - 1.0f;
-
-			glm::vec3 color = tex.get_texel(x, y);
-			if (0.299 * color.x + 0.587 * color.y + 0.114 * color.z > 0.5)
-				shape.push_back({ u,v });
-		}
 	}
 }

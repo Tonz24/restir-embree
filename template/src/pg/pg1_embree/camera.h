@@ -20,7 +20,7 @@ public:
 	Camera()  = default;
 
 	Camera( const int width, const int height, const float fov_y,
-		const glm::vec3 view_from, const glm::vec3 view_at, const Texture& tex);
+		const glm::vec3 view_from, const glm::vec3 view_at);
 
 	/* generate primary ray, top-left pixel image coordinates (xi, yi) are in the range <0, 1) x <0, 1) */
 	Ray GenerateRay(const glm::vec2& org) const;
@@ -73,18 +73,13 @@ private:
 
 	float f_y_{ 1.0f }; // focal lenght (px)
 
-	//glm::mat3 M_c_w_{}; // transformation matrix from CS -> WS
-	//glm::mat3 M_w_c_{}; // transformation matrix from WS -> CS
-
 	const RTCScene* scene;
 
 	void extractShape(const Texture& tex);
 
-	std::vector<glm::vec2> shape{};
 
 	std::unique_ptr<PixelSampler> pixelSampler{std::make_unique<CenterSampler>()};
 
-	void calcMatrices();;
 };
 
 
