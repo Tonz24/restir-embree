@@ -15,7 +15,7 @@ bool Raytracer::gammaCorrect{true};
 Raytracer::Raytracer( int width, int height, float fov_y, const glm::vec3& view_from, const glm::vec3& view_at,
 	const char * config ) : SimpleGuiDX11( width, height ) {
 
-	TextureDepr sky{ "../../../data/adidas.png" };
+	Texture sky{ "../../../data/adidas.png" };
 	camera_ = Camera{ width, height, fov_y, view_from, view_at, sky };
 	newCamPos = camera_.getPosition();
 }

@@ -14,7 +14,7 @@ private:
 	 * pz, nz
 	 * py, ny
 	 */
-	std::vector<std::unique_ptr<TextureDepr>> textures;
+	std::vector<std::unique_ptr<Texture>> textures;
 
 	const char* names[6] = {"px.jpg","nx.jpg","pz.jpg" ,"nz.jpg" ,"py.jpg" ,"ny.jpg" };
 };

@@ -1,16 +1,16 @@
 #pragma once
 #include "Sky.h"
-#include "TextureDepr.h"
+#include "Texture.h"
 #include "glm/glm.hpp"
 
 class SphericalMap : public Sky{
 public:
 	explicit SphericalMap(const char* path){
-		texture = std::make_unique<TextureDepr>(path);
+		texture = std::make_unique<Texture>(path);
 	}
 
 	glm::vec3 getTexel(const glm::vec3& dir) const override;
 
 private:
-	std::unique_ptr<TextureDepr> texture{};
+	std::unique_ptr<Texture> texture{};
 };

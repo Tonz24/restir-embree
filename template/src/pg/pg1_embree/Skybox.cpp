@@ -6,7 +6,7 @@ Skybox::Skybox(const char* path){
 	std::string p{ path };
 
 	for (int i = 0; i < 6; ++i){
-		textures.push_back(std::make_unique<TextureDepr>((p + names[i]).c_str()));
+		textures.push_back(std::make_unique<Texture>((p + names[i]).c_str()));
 	}
 }
 

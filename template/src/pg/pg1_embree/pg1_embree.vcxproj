@@ -253,7 +253,6 @@ xcopy /Y /D "$(SolutionDir)..\libs\ASSIMP\build\lib\Release\assimp-vc143-mt.dll"
     <ClInclude Include="surface.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Texture.h" />
-    <ClInclude Include="TextureDepr.h" />
     <ClInclude Include="triangle.h" />
     <ClInclude Include="TriangleCDF.h" />
     <ClInclude Include="tutorials.h" />
@@ -310,7 +309,6 @@ xcopy /Y /D "$(SolutionDir)..\libs\ASSIMP\build\lib\Release\assimp-vc143-mt.dll"
     <ClCompile Include="structs.cpp" />
     <ClCompile Include="surface.cpp" />
     <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="TextureDepr.cpp" />
     <ClCompile Include="triangle.cpp" />
     <ClCompile Include="TriangleCDF.cpp" />
     <ClCompile Include="tutorials.cpp" />

@@ -28,7 +28,7 @@ Material::Material()
 
 Material::Material( std::string & name, const glm::vec3 & ambient, const glm::vec3 & diffuse,
 	const glm::vec3 & specular, const glm::vec3 & emission, const float reflectivity, 
-	const float shininess, const float ior, TextureDepr ** textures, const int no_textures )
+	const float shininess, const float ior, Texture ** textures, const int no_textures )
 {
 	name_ = name;
 
@@ -71,12 +71,12 @@ std::string Material::get_name() const
 	return name_;
 }
 
-void Material::set_texture( const int slot, TextureDepr * texture )
+void Material::set_texture( const int slot, Texture * texture )
 {
 	textures_[slot] = texture;
 }
 
-TextureDepr * Material::get_texture( const int slot ) const
+Texture * Material::get_texture( const int slot ) const
 {
 	return textures_[slot];
 }
