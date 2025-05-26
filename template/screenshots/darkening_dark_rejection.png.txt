@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/darkening_dark_rejection.png
+
+Iteration count: 135
+Area samples: 8
+BRDF samples: 1
+
+Spatial reuse: True
+	Pass count: 1
+	Neighbor count: 10
+	Reuse radius: 60
+
+Temporal reuse: False
+
+Render time: 176.425 s
+Image mean: 0.23104
+Image variance: 13.4227
+
+Camera position: vec3(-2.416690, 1.429669, 1.635284)
+Camera view at: vec3(0.000000, 0.000000, 0.500000)
+Camera vertical FOV: 65

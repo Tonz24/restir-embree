@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/pairwise_test.png
+
+Iteration count: 11
+Area samples: 8
+BRDF samples: 1
+
+Spatial reuse: True
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 60
+
+Temporal reuse: True
+
+Render time: 22.1994 s
+Image mean: 0.184048
+Image variance: 11.0684
+
+Camera position: vec3(-2.416690, 1.429669, 1.635284)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 80

@@ -12,7 +12,7 @@ public:
 class CenterSampler : public PixelSampler {
 public:
 	glm::vec2 takeSample() const override {
-		return glm::vec2{ 0.5 };
+		return glm::vec2{ 0.0 };
 	}
 };
 
