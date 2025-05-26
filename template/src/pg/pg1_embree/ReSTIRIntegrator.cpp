@@ -82,8 +82,6 @@ void ReSTIRIntegrator::gui2() {
 
 	ImGui::Checkbox("Temporal reuse", &doTemporalReuse);
 	if (doTemporalReuse){
-		ImGui::Checkbox("Unbiased MIS weights (otherwise 0.5 weights are used)", &doUnbiasedTemporalMIS);
-		ImGui::Checkbox("Weigh last frame", &weighLastFrame);
 		ImGui::Checkbox("Show occlusion / disocclusion", &debugReprojection);
 	}
 }
@@ -425,48 +423,6 @@ void ReSTIRIntegrator::spatialReusePass(const glm::vec<2, int>& pixelCoords, con
 				misWeight = misNom / misDenom;
 		}
 
-
-		/* PAIRWISE MIS
-		 */
-		/*if (spatialWeightCalc == PAIRWISE_MIS) {
-			misWeight = 0.0f;
-			float MminusOne = static_cast<float>(M - 1);
-
-			//canonical sample weight
-			//the canonical sample is always at index 0 
-			if (i == 0){ 
-
-				float sum{ 0.0f };
-				float p_hat_c = evaluatePHat(sample_i, scene, SimpleGuiDX11::gBuffer.getCameraPos(), SimpleGuiDX11::gBuffer.getAt(coords_i), true);
-				float p_hat_c_div = p_hat_c / MminusOne;
-
-				for (int j = 0; j < neighborPixelCoords.size(); ++j){
-
-					if (i == j)
-						continue;
-
-					glm::vec<2, int> coords_j = neighborPixelCoords[j];
-					float p_hat_j = evaluatePHat(sample_i, scene, SimpleGuiDX11::gBuffer.getCameraPos(), SimpleGuiDX11::gBuffer.getAt(coords_j), true);
-
-					float denom = p_hat_c_div + p_hat_j;
-
-					if (denom > 0)
-						sum += p_hat_c_div / denom;
-				}
-				misWeight = rcpM * (1.0f + sum);
-			}
-
-			//non canonical sample weight
-			else {
-				float p_hat_i = evaluatePHat(sample_i, scene, SimpleGuiDX11::gBuffer.getCameraPos(), SimpleGuiDX11::gBuffer.getAt(coords_i), true);
-				float p_hat_c = evaluatePHat(sample_i, scene, SimpleGuiDX11::gBuffer.getCameraPos(), SimpleGuiDX11::gBuffer.getAt(neighborPixelCoords[0]), true);
-
-				float denom = p_hat_i + p_hat_c / MminusOne;
-
-				if (denom > 0)
-					misWeight = rcpM * (p_hat_i / denom);
-			}
-		}*/
 
 		if (spatialWeightCalc == PAIRWISE_MIS) {
 			misWeight = 0.0f;

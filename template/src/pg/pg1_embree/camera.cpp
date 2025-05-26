@@ -22,8 +22,6 @@ Ray Camera::GenerateRay(const glm::vec2& org) const {
 	const auto sample = pixelSampler->takeSample();
 	glm::vec2 orgShifted{org + sample};
 
-	orgShifted = org;
-
 	//generate world space ray direction
 	glm::vec3 d_c{orgShifted.x - static_cast<float>(width_) / 2.0f, static_cast<float>(height_) / 2.0f - orgShifted.y, -f_y_};
 	glm::vec3 d_w = invVievMatDir * d_c;

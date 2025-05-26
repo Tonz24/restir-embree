@@ -33,7 +33,7 @@ int Raytracer::ReleaseDevice(){
 
 void Raytracer::LoadScene( const std::string file_name ){
 	scene = Scene{ file_name.c_str(), device_ };
-	const auto path = std::string("../../../data/env/").append("pool.exr");
+	const auto path = std::string("../../../data/env/").append("forest.hdr");
 	scene.loadSkybox(path);
 }
 

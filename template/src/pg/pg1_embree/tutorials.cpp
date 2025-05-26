@@ -26,24 +26,14 @@ void error_handler( void * user_ptr, const RTCError code, const char * str )
 /* raytracer mainloop */
 int tutorial_3( const std::string file_name, const char * config )
 {
-	//SimpleGuiDX11 gui( 640, 480 );
-	//gui.MainLoop();
-	
-	//avenger
-	//Raytracer raytracer( 640 , 480 , 45.0 ,glm::vec3( -175, 140, 130 ), glm::vec3( 0, 0, 1 ), config );
-
-	//cornell
-	//Raytracer raytracer(640, 480, 35, glm::vec3(40, -940, 200), glm::vec3(0, 0, -200));
 
 	//dining room
+	//Raytracer raytracer(640, 480, 65, glm::vec3(-2.416690, 1.429669, 1.635284), glm::vec3(0, 0, 0.5));
 	//Raytracer raytracer(640, 480, 80, glm::vec3(-2.416690, 1.429669, 1.635284), glm::vec3(0, 0, 0));
-	//Raytracer raytracer(640, 480, 45, glm::vec3(-2.416690, 1.429669, 1.635284), glm::vec3(0, 0, 0));
 
 	//living room
-	Raytracer raytracer(1600, 900, 55, glm::vec3(1.877986, -7.724095, 1.602229), glm::vec3(0, 0, 0));
-
-	//RIS test
-	//Raytracer raytracer(640, 480, 45, glm::vec3(100, 100, 100), glm::vec3(0, 0, 0));
+	Raytracer raytracer(1280, 720, 55, glm::vec3(1.877986, -7.724095, 1.602229), glm::vec3(0, 0, 0));
+	//Raytracer raytracer(1600, 900, 55, glm::vec3(1.877986, -7.724095, 1.602229), glm::vec3(0, 0, 0));
 
 	raytracer.LoadScene( file_name );
 	raytracer.MainLoop();

@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/s_k_gris_20.png
+
+Iteration count: 0
+Area samples: 1
+BRDF samples: 1
+
+Spatial reuse: True
+	Pass count: 1
+	Neighbor count: 20
+	Reuse radius: 30
+
+Temporal reuse: False
+
+Render time: 7.81594 s
+Image mean: 0.183761
+Image variance: 11.0707
+
+Camera position: vec3(-2.416690, 1.429669, 1.635284)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 80

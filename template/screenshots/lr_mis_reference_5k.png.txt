@@ -1,0 +1,20 @@
+Image name: ../../../screenshots/lr_mis_reference_5k.png
+
+Iteration count: 5000
+Area samples: 1
+BRDF samples: 1
+
+Spatial reuse: False
+	Pass count: 1
+	Neighbor count: 5
+	Reuse radius: 30
+
+Temporal reuse: False
+
+Render time: 5027.97 s
+Image mean: 1.22168
+Image variance: 54.1459
+
+Camera position: vec3(1.877986, -7.724095, 1.602229)
+Camera view at: vec3(0.000000, 0.000000, 0.000000)
+Camera vertical FOV: 55
